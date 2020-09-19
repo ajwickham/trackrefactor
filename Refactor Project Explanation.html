@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <Title>Explanation of Portfolio</title>
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="fontsize">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">Portfolio</a></li>
+        </ul>
+      </div>  
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="jumbotron" style="text-align: center;">
+        <h1>Explanation of Project</h1>
+        <h1>to Refactor Car Selector</h1>
+        <p>Aims of the refactoring project</p>
+      </div>
+       
+        <p>Alan Wickham. Version 14/07/2020</p>
+        <h3>Context</h2>
+        <p>I'm looking for a career change, so I'm following the Epicodus boot
+          camp online.  As I go I'll learn new
+          techniques and approaches. </p>
+        <p>I have just learnt about prototypes and constructors and can see an opportunity to
+          refactor the Racecar game and reduce the line count significantly.</p>
+        <p>This project is to refactor the car selector page, the track itself will be a later
+          project.    
+        </p>  
+        <p>The motivation for doing so remains the same:</p>
+        <ul>
+          <li>Gives me practice and reinforces what I've learned</li>
+          <li>Forces me to extend beyond the course material</li>
+          <li>Demonstrates that I am can make a useful contribution to a team
+        </ul>
+
+        <h3>Racecar Game</h3>
+        <p>While the game itself was an interesting project, I also wanted to build
+           something that I could use for future refactoring projects based on what
+            I will learn later in the course.
+
+          At the point this refactoring project was started I had learned about HTML and Bootstrap,
+           and gone some way Javascript.  The subjects left to study are:</p>
+        <ul>
+          <li>Test Driven Development and Environments with JavaScript</li>
+          <li>Asynchrony and APIs</li>
+        </ul>   
+        
+        <h3>Product Backlog</h3>
+        <p> Last updated 4th September 2020</p>
+        <p>Product owner's priority is demonstrating capability to code, not to produce a perfect game</p>  
+
+        <ul>
+          <li>Refactor all functions and ensure variables are appropriately glocal or local / 8 story point   Started</li>
+          <li style="padding-left: 18px;"><span style="padding-left: 18px;">Refactor functions in car selector / 3 story points</span></li>
+          <li><del>Make the card flip work through the shuffled stack of cards, rather than each card is random / 5 story point </del> Done </li>
+          <li><del>Change BigWheelCorvette to a model that is longer than it is wide / 1 story point</del> Done</li>
+          <li>Shuffle icons on track / 8 story points</li>
+          <li>Capture track shape as a vector, build track as a data, then turn data into HTML / 144 story points</li>
+          <li><span>Remove "Are you ready" alert that stops cardflip from 
+            malfunctioning / </span><del>55</del>   8 story point</span></li>
+          <li>Correct size of yellow racecar card / 1 story point</li>
+          <li>Give players a choice of how many laps the race will last and alert the winner / 2story points</li>
+          <li>Remove alert asking player if they have missed an earlier racecar / 0.5 story points</li>
+        </ul>
+
+        <h3>Grid</h3>
+        I wanted to build in the flexibility to place icons in different places in 
+        future versions. At that point I didn't have the tool to properly isolate 
+        the icon, so each icon had a black or grey edge of colour that would blend 
+        with the background colour, as long as the icon was placed in exactly the right place. 
+        If I do a project to randomly place icons on the track I will address the isolation of 
+        the image icons then.<br>
+ 
+        I quickly found out that Bootstrap grid is fine for big blocks, but hopeless 
+        for the level detail needed to turn a photograph of a floor mat into an onscreen 
+        map. I found the grid tools, and built a system of a 20x20 grid that roughly 
+        aligned to the playing squares. Within each grid, a subsidiary 3x3 grid was 
+        built to allow exact placing of the icon. This then had to become a 4x4 grid 
+        to allow placing of the cars. Then I discovered div contexts really matter 
+        when trying to use z index to put cars on top of icons and then hiding them 
+        behind icons.  The final solution of a very fine grid based on viewwidths 
+        scales ended up providing a single div context and enough flexibility to 
+        place every icon and car in the right place.
+       
+        <h3>Arrays and looping</h3>
+        Part of the challenge was to build the game not using arrays (which I knew 
+        about from Python but hadn't learned in Javascript).  I expect to learn 
+        more powerful database tools than simple arrays. In the original game 
+        successive cards are turned over from a stack of cards which is probably 
+        almost ideal looping through a simple array. But initially each card 
+        turn was a fresh 1 in 32 chance. The first refactoring project: "Racecar Stack
+        of Card Refactor" addressed this so successive card turns worked through the array of cards.
+
+        <h3>Global and local variables</h3>
+        This was touched on briefly in the course but was not properly applied when
+        the game was made. Refactoring projects will address this issue.
+
+        <h3>Graphic design and game play</h3>
+        I have no pretention to be a graphic designer.  I love good visual 
+        design but I have no skill in identifying what makes for good design, nor 
+        have I invested time to learn graphic design tools. I found online 
+        isolation tools in time to isolate the vehicles but not the icons. It 
+        is doubtful I will bother refactoring the graphic design although it 
+        clearly could do with some.
+        
+        <h3> Event Bubbling</h3>
+        Event bubbling prevents the card flip from working unless there is a break.  The "Are you 
+        ready" alert provides this break. In a similar way, there is a problem 
+        with removing the vehicle when both cars are on the same spot, and this 
+        is fixed by always removing the class from the shared spot positions, 
+        irrespective of the number of cars on the spot.  These fixes are pretty 
+        ugly.  Having learned about event bubbling they will be addressed in a future 
+        refactoring project.
+          
+        <h3>Known Bugs</h3> 
+        The "do you want to block repeated alerts" message on the alerts is 
+        probably a setting somewhere that I will find at some point.
+        It isn't possible to run web developer tools until the page is properly 
+        loaded due to errors in the Bootstrap library.
+        <br><br>
+        <p>Copyright (c) 2020 Alan Wickham</p>
+        
+        
+      </div>  
+    
+  </body>
+</html>

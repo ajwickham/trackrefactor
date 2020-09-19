@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vehicle selector Refactor Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="fontsize">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="https://ajwickham.github.io/portfolio-explanation/index.html">Portfolio</a></li>
+        </ul>
+      </div>  
+      </div>
+    </nav> 
+    
+    <div class="container">
+      <h1>Refactoring Goals</h1>
+        <ul>
+          <li>DRY code</li>
+          <li>Demonstrate use of protypes and constructors</li>
+        </ul>
+      <h1>Indicators</h1>
+        <ul>
+          <li>Code reduced from 158 lines to 126 lines</li>
+          <li>2 Prototype methods were used to add and remove classes in various combinations across the 5 pictures for each player.</li>
+        </ul>
+
+
+
+
+      <h1>Vehicle selector</h1>
+     
+      <div class="row ">
+        <div class="col-sm-8">
+          <ul class="list-group">     
+            <li class="list-group-item" style="border: none">Click the next button to see the next vehicle option.</li>  
+            <li class="list-group-item" style="border: none">Scroll down and click the view button to see the vehicle from all angles.</li>  
+            <li class="list-group-item" style="border: none">Click the select button to choose the vehicle showing.</li>
+            <li class="list-group-item" style="border: none">Click the "Oh no I didn't mean to choose that one" to choose a different one</li>
+            <!--li class="list-group-item" style="border: none">Click the Ready to Play button, when cars have been selected</li-->
+          </ul>
+        </div>
+    <!--    <div class="col-sm-4">
+          <a href="Track.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" id="ready">Ready to Play</a>
+        </div>
+        Not needed for this refactor project -->
+
+      <!--  Two bootstap columns to choose cars-->
+      
+      <div class="row ">
+      
+        <div class="col-sm-6">
+          <h2>Player One</h2>
+          
+          <button class="btn btn-primary" id="next1">Next</button>
+          <div class="car1right carsize" style="margin-bottom: 5vh;"></div>
+           
+      <!-- to work out why DodgeViper isn't working-->          
+                <button class="btn btn-warning" id="view1">View</button>
+                <button class="btn btn-warning" id="clearview1">Clear View</button>    
+                <button class="btn btn-success" id="select1">Select</button>
+                <button class="btn btn-danger"  id="red1">Oh no! I didn't mean to choose that one</button>
+          </div>
+
+        <div class="col-sm-6">
+          <h2>Player Two</h2>
+          
+          <button class="btn btn-primary" id="next2">Next</button>
+          <div class="car2right carsize" style="margin-bottom: 5vh;"></div>
+           
+                
+                <button class="btn btn-warning" id="view2">View</button>
+                <button class="btn btn-warning" id="clearview2">Clear View</button>    
+                <button class="btn btn-success" id="select2">Select</button>
+                <button class="btn btn-danger"  id="red2">Oh no! I didn't mean to choose that one</button>
+            
+        </div>
+      </div>   <!--end of row1-->
+
+      <!--  four bootstap columns to view top, front and back of cars-->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="car1top cartop" style="justify-content: center"></div>
+        </div>
+        <div class="col-sm-3 text-right">
+          <div class="car1front carsize"></div>
+          <div class="car1back carsize"></div>
+        </div>
+        <div class="col-sm-3">
+          <div class="car2top cartop"></div>
+        </div>
+        <div class="col-sm-3 text-right">
+          <div class="car2front carsize"></div>
+          <div class="car2back carsize"></div>
+        </div>
+
+      </div>
+      <!--  Two bootstap columns to view left side of cars-->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="car1left carsize"></div>
+        </div>
+         
+        <div class="col-sm-6">
+          <div class="car2left carsize"></div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </body>
+</html>

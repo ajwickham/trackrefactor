@@ -1,0 +1,1455 @@
+
+/*Vehicle Selector Specific*/
+li.borderless { 
+  border-top: 0 none; 
+}
+
+.carsize {
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center, center;
+}
+.cartop {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center, center;
+}
+
+
+.RedDodgeViperfront {
+  background-image: url("../img/RedViper/front.png");}
+.RedDodgeViperright {
+  background-image: url("../img/RedViper/right.png");}
+.RedDodgeViperback {
+  background-image: url("../img/RedViper/rear.png");}
+.RedDodgeVipertop {
+  background-image: url("../img/RedViper/Top.png");}
+.RedDodgeViperleft {
+  background-image: url("../img/RedViper/left.png");}
+
+.RevJensMinifront{
+  background-image: url("../img/RevJensMini/front.png");}
+.RevJensMiniright {
+  background-image: url("../img/RevJensMini/right.png");}
+.RevJensMiniback {
+  background-image: url("../img/RevJensMini/rear.png");}
+.RevJensMinitop {
+  background-image: url("../img/RevJensMini/top.png");}
+.RevJensMinileft {
+  background-image: url("../img/RevJensMini/left.png");}
+
+.HighMountEnginefront{
+  background-image: url("../img/HighMountEngine/front.png");}
+.HighMountEngineright {
+  background-image: url("../img/HighMountEngine/right.png");}
+.HighMountEngineback {
+  background-image: url("../img/HighMountEngine/rear.png");}
+.HighMountEnginetop {
+  background-image: url("../img/HighMountEngine/top.png");}
+.HighMountEngineleft {
+  background-image: url("../img/HighMountEngine/left.jpg");}
+ 
+.Peerless1911Roadsterfront{
+  background-image: url("../img/Peerless1911Roadster/front.png");}
+.Peerless1911Roadsterright {
+  background-image: url("../img/Peerless1911Roadster/right.png");}
+.Peerless1911Roadsterback {
+  background-image: url("../img/Peerless1911Roadster/rear.png");}
+.Peerless1911Roadstertop {
+  background-image: url("../img/Peerless1911Roadster/top.png");}
+.Peerless1911Roadsterleft {
+  background-image: url("../img/Peerless1911Roadster/left.png");}
+
+.QuarryTruckfront{
+  background-image: url("../img/QuarryTruck/front.png");}
+.QuarryTruckright {
+  background-image: url("../img/QuarryTruck/right.png");}
+.QuarryTruckback {
+  background-image: url("../img/QuarryTruck/rear.png");}
+.QuarryTrucktop {
+  background-image: url("../img/QuarryTruck/top.png");}
+.QuarryTruckleft {
+  background-image: url("../img/QuarryTruck/left.png");}
+
+.RedVolkswagenBeetlefront{
+  background-image: url("../img/RedVolkswagenBeetle/front.png");}
+.RedVolkswagenBeetleright {
+  background-image: url("../img/RedVolkswagenBeetle/right.png");}
+.RedVolkswagenBeetleback {
+  background-image: url("../img/RedVolkswagenBeetle//rear.png");}
+.RedVolkswagenBeetletop {
+  background-image: url("../img/RedVolkswagenBeetle/top.png");}
+.RedVolkswagenBeetleleft {
+  background-image: url("../img/RedVolkswagenBeetle/left.png");}  
+
+.YellowCadillacfront{
+  background-image: url("../img/YellowCadillac/front.png");}
+.YellowCadillacright {
+  background-image: url("../img/YellowCadillac/right.png");}
+.YellowCadillacback {
+  background-image: url("../img/YellowCadillac/rear.png");}
+.YellowCadillactop {
+  background-image: url("../img/YellowCadillac/top.png");}
+.YellowCadillacleft {
+  background-image: url("../img/YellowCadillac/left.png");}  
+
+.YellowFordFocusfront{
+  background-image: url("../img/YellowFordFocus/front.png");}
+.YellowFordFocusright {
+  background-image: url("../img/YellowFordFocus/right.png");}
+.YellowFordFocusback {
+  background-image: url("../img/YellowFordFocus/rear.png");}
+.YellowFordFocustop {
+  background-image: url("../img/YellowFordFocus/top.png");}
+.YellowFordFocusleft {
+  background-image: url("../img/YellowFordFocus/left.png");}  
+
+/* Track specific */
+
+
+.pagecontainer {
+  display: grid;
+  width: 100vw;
+  height: 99vw;
+  grid-template-columns: repeat(1000, 0.1vw);
+  grid-template-rows: repeat(1000, 0.1vw);
+  background-color: greenyellow;
+  position: absolute
+}
+
+.side {
+  grid-column: 1 /200;
+  grid-row:1/600;
+  background-color: greenyellow;
+  display: grid;
+  grid-template-columns: repeat(200, 0.1vw);
+}
+
+.instructionsbackground {
+  grid-column: 10/190;
+  grid-row:10;
+  height: 27vw;
+  background-image: url("../img/Howtoplay1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.startyourenginesbackground {
+  grid-column: 10/190;
+  grid-row:400;
+  height: 20vw;
+  background-image: url("../img/Howtoplay2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#red3 {
+  grid-area: 530/45/580/175;
+  background-image: url("../img/Howtoplaybutton.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.stack {
+  grid-area: 300/1;
+   }
+.inner-stacks {
+  width: 25.5vw;
+  height: 10vw;
+  background-image: url("../img/Cardstacks/Bothstacks.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+ 
+.flip-card {
+  background-color: transparent;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden; /* For some reason setting visibility for front card stopped working*/
+  transition: transform 10s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  perspective: 100px; /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 27vw;
+  height: 13vw;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 13.5vw;
+  height: 60%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side Ironically this is the side of the card with the picture, usually known as the front!*/
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+} 
+
+.back-stand-in {  /*This replaces the flip-card-back so the flip-card back can be removed and the
+                    next flip-card-back brought into place*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27vw;
+  height: 7.5vw;
+  background-position: top right;
+}
+
+
+.RedHelmet {
+  background-image: url("../img/Cardstacks/Discards/RedHelmetcard.png"); 
+}
+.BlueHelmet {
+  background-image: url("../img/Cardstacks/Discards/BlueHelmetcard.png"); 
+}
+.YellowHelmet{
+  background-image: url("../img/Cardstacks/Discards/YellowHelmetcard.png"); 
+}
+.RedFlag{
+  background-image: url("../img/Cardstacks/Discards/RedFlagcard.png"); 
+}
+.GreenFlag{
+  background-image: url("../img/Cardstacks/Discards/Greenflagcard.png"); 
+}
+.YellowFlag{
+  background-image: url("../img/Cardstacks/Discards/YellowFlagcard.png"); 
+}
+.RedTyre{
+  background-image: url("../img/Cardstacks/Discards/RedTyrecard.png"); 
+}
+.BlueTyre{
+  background-image: url("../img/Cardstacks/Discards/bluetyrecard.png"); 
+}
+.GreenTyre{
+  background-image: url("../img/Cardstacks/Discards/Greentyrecard.png"); 
+}
+.RedRacecar{
+  background-image: url("../img/Cardstacks/Discards/RedRacecarcard.png"); 
+}
+.BlueRacecar{
+  background-image: url("../img/Cardstacks/Discards/BlueRacecarcard.png"); 
+}
+.GreenRacecar{
+  background-image: url("../img/Cardstacks/Discards/GreenRacecarcard.png"); 
+}
+.PurpleRacecar{
+  background-image: url("../img/Cardstacks/Discards/PurpleRacecarcard.png"); 
+}
+.YellowRacecar{
+  background-image: url("../img/Cardstacks/Discards/YellowRacecarcard.png"); 
+}
+
+
+.main {
+  grid-column: 200/1000;
+  grid-row:1/600;
+}
+.square {  /*class attached to grid areas to hold icons for example e2box*/
+  z-index: 1;
+  position: absolute;
+}
+.rotate {
+  width: 3.5vw;
+  height: 8vw;
+  padding: 0%;
+  margin: 0cm;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute; 
+  transform-origin: top center;
+}
+
+
+.r18box {
+  grid-area: 512/868;
+}
+.q18box {
+  grid-area: 516/837
+}
+.p18box {
+  grid-area: 516/790;
+}
+.o18box {
+  grid-area: 526/759;
+}
+.m18box {
+  grid-area: 520/682;
+}
+.l18box {
+  grid-area: 515/640;
+}
+.k18box {
+  grid-area: 520/601;
+}
+.j18box {
+  grid-area: 530/570;
+}
+.i19box {
+  grid-area: 525/532;
+}
+.h19box {
+  grid-area: 522/485;
+}
+.g19box {
+  grid-area: 527/455;
+}
+.f19box {
+  grid-area: 527/405;
+}
+.e19box {
+  grid-area: 527/367;
+}
+.d19box {
+  grid-area: 520/330;
+}
+.c18box {
+  grid-area: 512/298;
+}
+.c17box {
+  grid-area: 472/265;
+}
+.c16box {
+  grid-area: 431/263;
+}
+.c13box {
+  grid-area: 364/315;
+}
+.d12box {
+  grid-area: 337/341;
+}
+.d11box {
+  grid-area: 293/330;
+}
+.d10box {
+  grid-area: 255/318;
+}
+.c9box {
+  grid-area: 218/298;
+}
+.c7box {
+  grid-area: 190/275;
+}
+.c6box {
+  grid-area: 153/260;
+}
+.c5box {
+  grid-area: 115/270;
+}
+.c3box {
+  grid-area: 75/280;
+}
+.d3box {
+  grid-area: 45/310;
+}
+.e2box {
+  grid-area: 30/345; 
+}
+.f2box {
+  grid-area: 40/398;
+}
+.g3box {
+  grid-area: 55/425;
+}
+.g4box {
+  grid-area: 83/458;
+}
+.h5box {
+  grid-area: 123/470;
+}
+.h6box {
+  grid-area: 163/470;
+ }
+.g8box {
+  grid-area: 201/462;
+ }
+.g9box {
+  grid-area: 230/440;
+}
+.f10box {
+  grid-area: 263/420;
+}
+.f11box {
+  grid-area: 300/410;
+}
+.g12box {
+  grid-area: 330/418;
+}
+.g14box {
+  grid-area: 370/465;
+}
+.h14box {
+  grid-area: 370/496;
+}
+.i13box {
+  grid-area: 350/530;
+}
+.j12box {
+  grid-area: 312/547;
+}
+.j10box {
+  grid-area: 279/550;
+}
+.j9box {
+  grid-area: 238/558;
+}
+.j8box {
+  grid-area: 191/555;
+}
+.j6box {
+  grid-area: 153/550;
+}
+.j5box {
+  grid-area: 120/565;
+}
+.k3box {
+  grid-area: 50/607;
+}
+.l2box {
+  grid-area: 35/632;
+}
+.m2box {
+  grid-area: 37/677;
+}
+.n2box {
+  grid-area: 28/720;
+}
+.o2box {
+  grid-area: 28/752;
+}
+.p2box {
+  grid-area: 34/792;
+}
+.q2box {
+  grid-area: 33/827;
+}
+.q3box {
+  grid-area: 42/858;
+}
+.r3box {
+  grid-area: 59/893;
+}
+.s4box {
+  grid-area: 90/910;
+}
+.s5box {
+  grid-area: 140/921;
+}
+.r6box {
+  grid-area: 170/895;
+}
+.q7box {
+  grid-area: 192/858;
+}
+.q8box {
+  grid-area: 202/832;
+}
+.p8box {
+  grid-area: 205/788;
+}
+.o8box {
+  grid-area: 215/751;
+}
+.n8box {
+  grid-area: 218/718;
+}
+.m8box {
+  grid-area: 217/672;
+}
+.l9box {
+  grid-area: 229/639;
+}
+.l10box {
+  grid-area: 253/615;
+}
+.l11box {
+  grid-area: 300/637;
+}
+.l12box {
+  grid-area: 322/656;
+}
+.m12box {
+  grid-area: 325/696;
+}
+.n12box {
+  grid-area: 310/735;
+}
+.o11box {
+  grid-area: 300/769;
+}
+.p11box {
+  grid-area: 295/812;
+}
+.q11box {
+  grid-area: 270/848;
+}
+.s12box {
+  grid-area: 311/910;
+}
+.s13box {
+  grid-area: 340/910;
+}
+.s14box {
+  grid-area: 396/935;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s17Arotate {
+  grid-area:510/888;
+  transform: rotate(210deg);
+  }
+.s17Crotate {
+  grid-area:535/910;
+  transform: rotate(220deg);
+  }
+.r18Arotate {
+  grid-area:518/868;
+  transform: rotate(220deg);
+  z-index: 10;
+  }
+.r18Brotate {
+  grid-area:530/868;
+  transform: rotate(235deg);
+  }
+.r18Crotate {
+  grid-area:548/876;
+  transform: rotate(250deg);
+  }
+.q18Arotate {
+  grid-area:516/837;
+  transform: rotate(250deg);
+    }
+.q18Brotate {
+  grid-area:531/837;
+  transform: rotate(270deg);
+  }
+.q18Crotate {
+  grid-area:546/837;
+  transform: rotate(270deg);
+    }
+.p18Arotate {
+  grid-area:516/790;
+  transform: rotate(270deg);
+  }
+.p18Brotate {
+  grid-area:534/790;
+  transform: rotate(270deg);
+  }
+.p18Crotate {
+  grid-area:552/790;
+  transform: rotate(270deg);
+  }
+.o18Arotate {
+  grid-area:516/759;
+  transform: rotate(270deg);
+  }
+.o18Brotate {
+  grid-area:534/759;
+  transform: rotate(270deg);
+  }
+.o18Crotate {
+  grid-area:552/759;
+  transform: rotate(270deg);
+  }
+.n18Arotate {
+  grid-area:520/710;
+  transform: rotate(210deg);
+  }
+.n18Brotate {
+  grid-area:540/719;
+  transform: rotate(210deg);
+  }
+.n18Crotate {
+  grid-area:552/719;
+  transform: rotate(230deg);
+  }
+.m18Arotate {
+  grid-area:516/682;
+  transform: rotate(270deg);
+  }
+.m18Brotate {
+  grid-area:534/682;
+  transform: rotate(270deg);
+  }
+.m18Crotate {
+  grid-area:552/682;
+  transform: rotate(270deg);
+  }
+.l18Arotate {
+  grid-area:516/640;
+  transform: rotate(270deg);
+  }
+.l18Brotate {
+  grid-area:534/640;
+  transform: rotate(270deg);
+  }
+.l18Crotate {
+  grid-area:552/640;
+  transform: rotate(270deg);
+  }
+.k18Arotate {
+  grid-area:516/601;
+  transform: rotate(270deg);
+  }
+.k18Brotate {
+  grid-area:534/601;
+  transform: rotate(270deg);
+  }
+.k18Crotate {
+  grid-area:552/601;
+  transform: rotate(270deg);
+  }
+.j18Arotate {
+  grid-area:516/570;
+  transform: rotate(270deg);
+  }
+.j18Brotate {
+  grid-area:534/570;
+  transform: rotate(270deg);
+  }
+.j18Crotate {
+  grid-area:552/570;
+  transform: rotate(270deg);
+  }
+.i19Arotate {
+  grid-area:516/532;
+  transform: rotate(270deg);
+  }
+.i19Brotate {
+  grid-area:534/532;
+  transform: rotate(270deg);
+  }
+.i19Crotate {
+  grid-area:552/532;
+  transform: rotate(270deg);
+  }
+.h19Arotate {
+  grid-area:522/485;
+  transform: rotate(270deg);
+  }
+.h19Brotate {
+  grid-area:540/485;
+  transform: rotate(270deg);
+  }
+.h19Crotate {
+  grid-area:558/485;
+  transform: rotate(270deg);
+  }
+.g19Arotate {
+  grid-area:527/455;
+  transform: rotate(270deg);
+  }
+.g19Brotate {
+  grid-area:545/455;
+  transform: rotate(270deg);
+  }
+.g19Crotate {
+  grid-area:563/455;
+  transform: rotate(270deg);
+  }
+.f19Arotate {
+  grid-area:527/405;
+  transform: rotate(270deg);
+  }
+.f19Brotate {
+  grid-area:545/405;
+  transform: rotate(270deg);
+  }
+.f19Crotate {
+  grid-area:563/405;
+  transform: rotate(270deg);
+  }
+.e19Arotate {
+  grid-area:527/367;
+  transform: rotate(270deg);
+  }
+.e19Brotate {
+  grid-area:545/367;
+  transform: rotate(270deg);
+  }
+.e19Crotate {
+  grid-area:563/367;
+  transform: rotate(270deg);
+  }
+.d19Arotate {
+  grid-area:520/330;
+  transform: rotate(280deg);
+  }
+.d19Brotate {
+  grid-area:538/329;
+  transform: rotate(280deg);
+  }
+.d19Crotate {
+  grid-area:556/326;
+  transform: rotate(280deg);
+  }
+.c18Arotate {
+  grid-area: 512/298;
+  transform: rotate(290deg);    
+}
+.c18Brotate {
+  grid-area: 530/290;
+  transform: rotate(290deg);    
+}
+.c18Crotate {
+  grid-area: 540/280;
+  transform: rotate(300deg);    
+}
+.c17Arotate {
+  grid-area: 480/280;
+  transform: rotate(320deg);
+}
+.c17Brotate {
+  grid-area: 480/266;
+  transform: rotate(340deg);
+}
+.c17Crotate {
+  grid-area: 480/252;
+  transform: rotate(350deg);
+}
+.c16Arotate {
+  grid-area: 460/290;
+  transform: rotate(350deg);
+}
+.c16Brotate {
+  grid-area: 455/280;
+  transform: rotate(10deg);
+}
+.c16Crotate {
+  grid-area: 450/260;
+  transform: rotate(15deg);
+}
+.c14Arotate {
+  grid-area: 400/310;
+  transform: rotate(330deg);
+}
+.c14Brotate {
+  grid-area: 400/310;
+  transform: rotate(330deg);
+}
+.c14Crotate {
+  grid-area: 400/280;
+  transform: rotate(340deg);
+ }
+.c13Arotate {
+  grid-area: 385/338;
+  transform: rotate(30deg);
+}
+.c13Brotate {
+  grid-area: 380/315;
+  transform: rotate(30deg);
+}
+.c13Crotate {
+  grid-area: 380/302;
+  transform: rotate(30deg);
+}
+.d12Arotate {
+  grid-area: 350/359;
+  transform: rotate(20deg);
+}
+.d12Brotate {
+  grid-area: 350/341;
+  transform: rotate(20deg);
+}
+.d12Crotate {
+  grid-area: 345/323;
+  transform: rotate(20deg);
+}
+.d11Arotate {
+  grid-area: 310/355;
+  transform: rotate(350deg);
+}
+.d11Brotate {
+  grid-area: 315/335;
+  transform: rotate(0deg);
+}
+.d11Crotate {
+  grid-area: 315/320;
+  transform: rotate(10deg);
+}
+.d10Arotate {
+  grid-area: 269/338;
+  transform: rotate(350deg);
+}
+.d10Brotate {
+  grid-area: 270/318;
+  transform: rotate(340deg);
+}
+.d10Crotate {
+  grid-area: 265/300;
+  transform: rotate(330deg);
+}
+.c9Arotate {
+  grid-area: 230/315;
+  transform: rotate(330deg);
+}
+.c9Brotate {
+  grid-area: 235/300;
+  transform: rotate(340deg);
+}
+.c9Crotate {
+  grid-area: 240/280;
+  transform: rotate(340deg);
+}
+.c7Arotate {
+  grid-area: 205/300;
+  transform: rotate(330deg);
+}
+.c7Brotate {
+  grid-area: 205/275;
+  transform: rotate(340deg);
+}
+.c7Crotate {
+  grid-area: 205/260;
+  transform: rotate(340deg);
+}
+.c6Arotate {
+  grid-area: 170/285;
+  transform: rotate(350deg);
+}
+.c6Brotate {
+  grid-area: 170/270;
+  transform: rotate(350deg);
+}
+.c6Crotate {
+  grid-area: 170/255;
+  transform: rotate(350deg);
+}
+.c5Arotate {
+  grid-area: 125/290;
+  transform: rotate(5deg);
+}
+.c5Brotate {
+  grid-area: 125/270;
+  transform: rotate(10deg);
+}
+.c5Crotate {
+  grid-area: 120/255;
+  transform: rotate(10deg);
+}
+.c3Arotate {
+  grid-area: 98/300;
+  transform: rotate(20deg);
+}
+.c3Brotate {
+  grid-area: 90/290;
+  transform: rotate(20deg);
+}
+.c3Crotate {
+  grid-area: 75/275;
+  transform: rotate(20deg);
+}
+.d3Arotate {
+  grid-area: 80/340;
+  transform: rotate(40deg);
+}  
+.d3Brotate {
+  grid-area: 60/315;
+  transform: rotate(40deg);
+}  
+.d3Crotate {
+  grid-area: 55/305;
+  transform: rotate(40deg);
+}  
+.e2Arotate {
+  grid-area: 70/355;
+  transform: rotate(70deg); 
+}
+.e2Brotate {
+  grid-area: 50/355;
+  transform: rotate(70deg); 
+}
+.e2Crotate {
+  grid-area: 35/360;
+  transform: rotate(75deg); 
+}
+.f2Arotate {
+  grid-area: 75/398;
+  transform: rotate(90deg); 
+}
+.f2Brotate {
+  grid-area: 55/398;
+  transform: rotate(90deg); 
+}
+.f2Crotate {
+  grid-area: 40/398;
+  transform: rotate(90deg); 
+}
+.g4Arotate {
+  grid-area: 120/448;
+  transform: rotate(140deg); 
+}
+.g4Brotate {
+  grid-area: 110/458;
+  transform: rotate(140deg); 
+}
+.g4Crotate {
+  grid-area: 100/475;
+  transform: rotate(140deg); 
+}
+.h5Arotate {
+  grid-area: 150/460;
+  transform: rotate(150deg); 
+}
+.h5Brotate {
+  grid-area: 150/475;
+  transform: rotate(170deg); 
+}
+.h5Crotate {
+  grid-area: 150/490;
+  transform: rotate(170deg); 
+}
+.h6Arotate {
+  grid-area: 185/455;
+  transform: rotate(185deg);
+}
+.h6Brotate {
+  grid-area: 185/470;
+  transform: rotate(185deg);
+}
+.h6Crotate {
+  grid-area: 190/485;
+  transform: rotate(190deg);
+}
+.g8Arotate {
+  grid-area: 220/438;
+  transform: rotate(195deg);
+}
+.g8Brotate {
+  grid-area: 220/458;
+  transform: rotate(195deg);
+}
+.g8Crotate {
+  grid-area: 230/475;
+  transform: rotate(200deg);
+}
+.g9Arotate {
+  grid-area: 255/420;
+  transform: rotate(200deg);
+}
+.g9Brotate {
+  grid-area: 260/440;
+  transform: rotate(200deg);
+}
+.g9Crotate {
+  grid-area: 265/460;
+  transform: rotate(200deg);
+}
+.f10Arotate {
+  grid-area: 290/405;
+  transform: rotate(200deg);
+}
+.f10Brotate {
+  grid-area: 290/425;
+  transform: rotate(200deg);
+}
+.f10Crotate {
+  grid-area: 295/445;
+  transform: rotate(200deg);
+}
+.f11Arotate {
+  grid-area: 330/400;
+  transform: rotate(180deg);
+}
+.f11Brotate {
+  grid-area: 325/420;
+  transform: rotate(180deg);
+}
+.f11Crotate {
+  grid-area: 325/440;
+  transform: rotate(180deg);
+}
+.g12Arotate {
+  grid-area: 370/415;
+  transform: rotate(165deg);
+}
+.g12Brotate {
+  grid-area: 360/425;
+  transform: rotate(170deg);
+}
+.g12Crotate {
+  grid-area: 355/440;
+  transform: rotate(180deg);
+}
+.h14Arotate {
+  grid-area: 400/510;
+  transform: rotate(90deg);
+}
+.h14Brotate {
+  grid-area: 385/505;
+  transform: rotate(100deg);
+}
+.h14Crotate {
+  grid-area: 370/500;
+  transform: rotate(100deg);
+}
+.i13Arotate {
+  grid-area: 360/530;
+  transform: rotate(50deg);
+}
+.i13Brotate {
+  grid-area: 370/545;
+  transform: rotate(50deg);
+}
+.i13Crotate {
+  grid-area: 385/560;
+  transform: rotate(50deg);
+}
+.j12Arotate {
+  grid-area: 330/570;
+  transform: rotate(20deg);
+}
+.j12Brotate {
+  grid-area: 330/555;
+  transform: rotate(20deg);
+}
+.j12Crotate {
+  grid-area: 330/535;
+  transform: rotate(20deg);
+}
+.j10Arotate {
+  grid-area: 290/545;
+  transform: rotate(10deg);
+}
+.j10Brotate {
+  grid-area: 290/560;
+  transform: rotate(10deg);
+}
+.j10Crotate {
+  grid-area: 290/575;
+  transform: rotate(00deg);
+}
+.j9Arotate {
+  grid-area: 245/540;
+  transform: rotate(00deg);
+}
+.j9Brotate {
+  grid-area: 245/558;
+  transform: rotate(00deg);
+}
+.j9Crotate {
+  grid-area: 245/570;
+  transform: rotate(00deg);
+}
+.j8Arotate {
+  grid-area: 205/540;
+  transform: rotate(00deg);
+}
+.j8Brotate {
+  grid-area: 205/555;
+  transform: rotate(00deg);
+}
+.j8Crotate {
+  grid-area: 205/570;
+  transform: rotate(00deg);
+}
+.j6Arotate {
+  grid-area: 165/545;
+  transform: rotate(10deg);
+}
+.j6Brotate {
+  grid-area: 165/560;
+  transform: rotate(10deg);
+}
+.j6Crotate {
+  grid-area: 165/575;
+  transform: rotate(0deg);
+}
+.j5Arotate {
+    grid-area: 130/580;
+    transform: rotate(10deg);
+}
+.j5Brotate {
+  grid-area: 130/565;
+  transform: rotate(10deg);
+}
+.j5Crotate {
+  grid-area: 130/550;
+  transform: rotate(10deg);
+}
+.j4Arotate {
+  grid-area: 100/595;
+  transform: rotate(90deg);
+}
+.j4Brotate {
+grid-area: 90/585;
+transform: rotate(100deg);
+}
+.j4Crotate {
+grid-area: 70/575;
+transform: rotate(100deg);
+}
+.k3Arotate {
+  grid-area: 80/615;
+  transform: rotate(40deg);
+}
+.k3Brotate {
+  grid-area: 60/607;
+  transform: rotate(40deg);
+}
+.k3Crotate {
+  grid-area: 50/600;
+  transform: rotate(40deg);
+}
+.l2Arotate {
+    grid-area: 70/638;
+    transform: rotate(70deg);
+}
+.l2Brotate {
+  grid-area: 55/638;
+  transform: rotate(70deg);
+}
+.l2Crotate {
+  grid-area: 40/638;
+  transform: rotate(80deg);
+}
+.m2Arotate {
+  grid-area: 60/685;
+  transform: rotate(80deg);
+ }
+ .m2Brotate {
+  grid-area: 45/685;
+  transform: rotate(80deg);
+}
+.m2Crotate {
+  grid-area: 30/685;
+  transform: rotate(80deg);
+}
+.n2Arotate {
+  grid-area: 60/720;
+  transform: rotate(90deg);
+}
+.n2Brotate {
+  grid-area: 45/720;
+  transform: rotate(90deg);
+}
+.n2Crotate {
+  grid-area: 30/720;
+  transform: rotate(90deg);
+}
+.o2Arotate {
+  grid-area: 65/758;
+  transform: rotate(90deg);
+}
+.o2Brotate {
+  grid-area: 45/758;
+  transform: rotate(90deg);
+}
+.o2Crotate {
+  grid-area: 25/758;
+  transform: rotate(90deg);
+}
+.p2Arotate {
+  grid-area: 72/798;
+  transform: rotate(90deg);
+}
+.p2Brotate {
+  grid-area: 52/798;
+  transform: rotate(90deg);
+}
+.p2Crotate {
+  grid-area: 32/798;
+  transform: rotate(90deg);
+}
+.q2Arotate {
+  grid-area: 73/830;
+  transform: rotate(95deg);
+}
+.q2Brotate {
+  grid-area: 53/830;
+  transform: rotate(95deg);
+}
+.q2Crotate {
+  grid-area: 33/830;
+  transform: rotate(95deg);
+}    
+.q3Arotate {
+  grid-area: 82/858;
+  transform: rotate(100deg);
+}
+.q3Brotate {
+  grid-area: 62/862;
+  transform: rotate(100deg);
+}
+.q3Crotate {
+  grid-area: 42/868;
+  transform: rotate(105deg);
+}
+.r3Arotate {
+  grid-area: 95/885;
+  transform: rotate(120deg);
+}
+.r3Brotate {
+  grid-area: 75/895;
+  transform: rotate(120deg);
+}
+.r3Crotate {
+  grid-area: 65/905;
+  transform: rotate(120deg);
+}
+.s4Arotate {
+  grid-area: 115/890;
+  transform: rotate(180deg);
+}
+.s4Brotate {
+  grid-area: 115/910;
+  transform: rotate(180deg);
+}
+.s4Crotate {
+  grid-area: 115/930;
+  transform: rotate(180deg);
+}
+.s5Arotate {
+  grid-area: 150/900;
+  transform: rotate(180deg);
+}
+.s5Brotate {
+  grid-area: 160/915;
+  transform: rotate(180deg);
+}
+.s5Crotate {
+  grid-area: 170/930;
+  transform: rotate(190deg);
+}
+.q7Arotate {
+  grid-area: 232/858;
+  transform: rotate(260deg);
+}
+.q7Brotate {
+  grid-area: 212/858;
+  transform: rotate(250deg);
+}
+.q7Crotate {
+  grid-area: 192/850;
+  transform: rotate(240deg);
+}
+.q8Arotate {
+  grid-area: 202/825;
+  transform: rotate(250deg);
+}
+.q8Brotate {
+  grid-area: 222/825;
+  transform: rotate(250deg);
+}
+.q8Crotate {
+  grid-area: 242/825;
+  transform: rotate(260deg);
+}
+.p8Arotate {
+  grid-area: 205/780;
+  transform: rotate(260deg);
+}
+.p8Brotate {
+  grid-area: 225/780;
+  transform: rotate(260deg);
+}
+.p8Crotate {
+  grid-area: 245/780;
+  transform: rotate(260deg);
+}
+.o8Arotate {
+  grid-area: 212/745;
+  transform: rotate(260deg);
+}
+.o8Brotate {
+  grid-area: 232/745;
+  transform: rotate(260deg);
+}
+.o8Crotate {
+  grid-area: 250/745;
+  transform: rotate(260deg);
+}
+.n8Arotate {
+  grid-area: 215/710;
+  transform: rotate(260deg);
+}
+.n8Brotate {
+  grid-area: 235/710;
+  transform: rotate(260deg);
+}
+.n8Crotate {
+  grid-area: 245/710;
+  transform: rotate(260deg);
+}
+.m8Arotate {
+  grid-area: 217/670;
+  transform: rotate(260deg);
+}
+.m8Brotate {
+  grid-area: 237/675;
+  transform: rotate(260deg);
+}
+.m8Crotate {
+  grid-area: 257/680;
+  transform: rotate(260deg);
+}
+.l9Arotate {
+  grid-area: 240/630;
+  transform: rotate(230deg);
+}
+.l9Brotate {
+  grid-area: 250/645;
+  transform: rotate(230deg);
+}
+.l9Crotate {
+  grid-area: 260/660;
+  transform: rotate(230deg);
+}
+.l10Arotate {
+  grid-area: 283/610;
+  transform: rotate(200deg);
+}
+.l10Brotate {
+  grid-area: 283/625;
+  transform: rotate(200deg);
+}
+.l10Crotate {
+  grid-area: 283/645;
+  transform: rotate(200deg);
+}
+.l11Arotate {
+  grid-area: 335/617;
+  transform: rotate(170deg);
+}
+.l11Brotate {
+  grid-area: 320/637;
+  transform: rotate(170deg);
+}
+.l11Crotate {
+  grid-area: 310/647;
+  transform: rotate(170deg);
+}
+.l12Arotate {
+  grid-area: 330/670;
+  transform: rotate(130deg);
+}
+.l12Brotate {
+  grid-area: 342/670;
+  transform: rotate(130deg);
+}
+.l12Crotate {
+  grid-area: 362/660;
+  transform: rotate(110deg);
+}
+.m12Arotate {
+  grid-area: 360/705;
+  transform: rotate(80deg);
+}
+.m12Brotate {
+  grid-area: 340/696;
+  transform: rotate(90deg);
+}
+.m12Crotate {
+  grid-area: 325/696;
+  transform: rotate(80deg);
+}
+.o11Arotate {
+  grid-area: 335/780;
+  transform: rotate(70deg);
+}
+.o11Brotate {
+  grid-area: 315/775;
+  transform: rotate(70deg);
+}
+.o11Crotate {
+  grid-area: 300/769;
+  transform: rotate(70deg);
+}
+.p11Arotate {
+  grid-area: 330/815;
+  transform: rotate(70deg);
+}
+.p11Brotate {
+  grid-area: 310/810;
+  transform: rotate(70deg);
+}
+.p11Crotate {
+  grid-area: 290/810;
+  transform: rotate(70deg);
+}
+.q11Arotate {
+  grid-area: 315/860;
+  transform: rotate(80deg);
+}
+.q11Brotate {
+  grid-area: 295/855;
+  transform: rotate(80deg);
+}
+.q11Crotate {
+  grid-area: 275/848;
+  transform: rotate(80deg);
+}
+.r11Arotate {
+  grid-area: 320/890;
+  transform: rotate(180deg);
+}
+.r11Brotate {
+  grid-area: 311/910;
+  transform: rotate(180deg);
+}
+.r11Crotate {
+  grid-area: 311/920;
+  transform: rotate(190deg);
+}
+.s12Arotate {
+  grid-area: 355/900;
+  transform: rotate(150deg);
+ }
+.s12Brotate {
+  grid-area: 340/910;
+  transform: rotate(150deg);
+}
+.s12Crotate {
+  grid-area: 345/930;
+  transform: rotate(150deg);
+}
+.s13Arotate {
+  grid-area: 385/915;
+  transform: rotate(150deg);
+}
+.s13Brotate {
+  grid-area: 380/920;
+  transform: rotate(160deg);
+ }
+.s13Crotate {
+  grid-area: 380/945;
+  transform: rotate(160deg);
+}
+.s14Arotate {
+  grid-area: 420/920;
+  transform: rotate(160deg);
+}
+.s14Brotate {
+  grid-area: 420/935;
+  transform: rotate(160deg);
+}
+.s14Crotate {
+  grid-area: 420/958;
+  transform: rotate(160deg);
+}

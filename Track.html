@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Racecar Game</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="pagecontainer">
+            
+      
+     
+    
+      <div class="main">
+        <img src="img/Track1.png" style="width: 100%;height: 100%;">
+      </div>     
+
+
+
+      <div id="s17A" class="s17Arotate rotate"></div>
+      <div id="s17C" class="s17Crotate rotate"></div>
+      <div id="r18A" class="r18Arotate rotate"></div>
+      <div id="r18B" class="r18Brotate rotate"></div>
+      <div id="r18C" class="r18Crotate rotate"></div>
+      <div id="q18A" class="q18Arotate rotate"></div>
+      <div id="q18B" class="q18Brotate rotate"></div>
+      <div id="q18C" class="q18Crotate rotate"></div>
+      <div id="p18A" class="p18Arotate rotate"></div>
+      <div id="p18B" class="p18Brotate rotate"></div>
+      <div id="p18C" class="p18Crotate rotate"></div>
+      <div id="o18A" class="o18Arotate rotate"></div>
+      <div id="o18B" class="o18Brotate rotate"></div>
+      <div id="o18C" class="o18Crotate rotate"></div>
+      <div id="n18A" class="n18Arotate rotate"></div>
+      <div id="n18B" class="n18Brotate rotate"></div>
+      <div id="n18C" class="n18Crotate rotate"></div>
+      <div id="m18A" class="m18Arotate rotate"></div>
+      <div id="m18B" class="m18Brotate rotate"></div>
+      <div id="m18C" class="m18Crotate rotate"></div>
+      <div id="l18A" class="l18Arotate rotate"></div>
+      <div id="l18B" class="l18Brotate rotate"></div>
+      <div id="l18C" class="l18Crotate rotate"></div>
+      <div id="k18A" class="k18Arotate rotate"></div>
+      <div id="k18B" class="k18Brotate rotate"></div>
+      <div id="k18C" class="k18Crotate rotate"></div>
+      <div id="j18A" class="j18Arotate rotate"></div>
+      <div id="j18B" class="j18Brotate rotate"></div>
+      <div id="j18C" class="j18Crotate rotate"></div>
+      <div id="i19A" class="i19Arotate rotate"></div>
+      <div id="i19B" class="i19Brotate rotate"></div>
+      <div id="i19C" class="i19Crotate rotate"></div>
+      <div id="h19A" class="h19Arotate rotate"></div>
+      <div id="h19B" class="h19Brotate rotate"></div>
+      <div id="h19C" class="h19Crotate rotate"></div>
+      <div id="g18A" class="g18Arotate rotate"></div>
+      <div id="g18B" class="g18Brotate rotate"></div>
+      <div id="g18C" class="g18Crotate rotate"></div>
+      <div id="f19A" class="f19Arotate rotate"></div>
+      <div id="f19B" class="f19Brotate rotate"></div>
+      <div id="f19C" class="f19Crotate rotate"></div>
+      <div id="e19A" class="e19Arotate rotate"></div>
+      <div id="e19B" class="e19Brotate rotate"></div>
+      <div id="e19C" class="e19Crotate rotate"></div>
+      <div id="d19A" class="d19Arotate rotate"></div>
+      <div id="d19B" class="d19Brotate rotate"></div>
+      <div id="d19C" class="d19Crotate rotate"></div>
+      <div id="c18A" class="c18Arotate rotate"></div>
+      <div id="c18B" class="c18Brotate rotate"></div>
+      <div id="c18C" class="c18Crotate rotate"></div>
+      <div id="c17A" class="c17Arotate rotate"></div>
+      <div id="c17B" class="c17Brotate rotate"></div>
+      <div id="c17C" class="c17Crotate rotate"></div>
+      <div id="c16A" class="c16Arotate rotate"></div>
+      <div id="c16B" class="c16Brotate rotate"></div>
+      <div id="c16C" class="c16Crotate rotate"></div>
+      <div id="c14A" class="c14Arotate rotate"></div>
+      <div id="c14B" class="c14Brotate rotate"></div>
+      <div id="c14C" class="c14Crotate rotate"></div>
+      <div id="c13A" class="c13Arotate rotate"></div>
+      <div id="c13B" class="c13Brotate rotate"></div>
+      <div id="c13C" class="c13Crotate rotate"></div>
+      <div id="d12A" class="d12Arotate rotate"></div>
+      <div id="d12B" class="d12Brotate rotate"></div>
+      <div id="d12C" class="d12Crotate rotate"></div>
+      <div id="d11A" class="d11Arotate rotate"></div>
+      <div id="d11B" class="d11Brotate rotate"></div>
+      <div id="d11C" class="d11Crotate rotate"></div>
+      <div id="d10A" class="d10Arotate rotate"></div>
+      <div id="d10B" class="d10Brotate rotate"></div>
+      <div id="d10C" class="d10Crotate rotate"></div>
+      <div id="c9A" class="c9Arotate rotate"></div>
+      <div id="c9B" class="c9Brotate rotate"></div>
+      <div id="c9C" class="c9Crotate rotate"></div>
+      <div id="c7A" class="c7Arotate rotate"></div>
+      <div id="c7B" class="c7Brotate rotate"></div>
+      <div id="c7C" class="c7Crotate rotate"></div>
+      <div id="c6A" class="c6Arotate rotate"></div>
+      <div id="c6B" class="c6Brotate rotate"></div>
+      <div id="c6C" class="c6Crotate rotate"></div>
+      <div id="c9A" class="c9Arotate rotate"></div>
+      <div id="c9B" class="c9Brotate rotate"></div>
+      <div id="c9C" class="9Crotate rotate"></div>
+      <div id="c5A" class="c5Arotate rotate"></div>
+      <div id="c5B" class="c5Brotate rotate"></div>
+      <div id="c5C" class="c5Crotate rotate"></div>
+      <div id="c3A" class="c3Arotate rotate"></div>
+      <div id="c3B" class="c3Brotate rotate"></div>
+      <div id="c3C" class="c3Crotate rotate"></div>
+      <div id="d3A" class="d3Arotate rotate"></div>
+      <div id="d3B" class="d3Brotate rotate"></div>
+      <div id="d3C" class="d3Crotate rotate"></div>
+      <div id="e2A" class="e2Arotate rotate"></div>
+      <div id="e2B" class="e2Brotate rotate"></div>
+      <div id="e2C" class="e2Crotate rotate"></div>
+      <div id="f2A" class="f2Arotate rotate"></div>
+      <div id="f2B" class="f2Brotate rotate"></div>
+      <div id="f2C" class="f2Crotate rotate"></div>
+      <div id="g3A" class="g3Arotate rotate"></div>
+      <div id="g3B" class="g3Brotate rotate"></div>
+      <div id="g3C" class="g3Crotate rotate"></div>
+      <div id="g4A" class="g4Arotate rotate"></div>
+      <div id="g4B" class="g4Brotate rotate"></div>
+      <div id="g4C" class="g4Crotate rotate"></div>
+      <div id="h5A" class="h5Arotate rotate"></div>
+      <div id="h5B" class="h5Brotate rotate"></div>
+      <div id="h5C" class="h5Crotate rotate"></div>
+      <div id="h6A" class="h6Arotate rotate"></div>
+      <div id="h6B" class="h6Brotate rotate"></div>
+      <div id="h6C" class="h6Crotate rotate"></div>
+      <div id="g8A" class="g8Arotate rotate"></div>
+      <div id="g8B" class="g8Brotate rotate"></div>
+      <div id="g8C" class="g8Crotate rotate"></div>    
+      <div id="g9A" class="g9Arotate rotate"></div>
+      <div id="g9B" class="g9Brotate rotate"></div>
+      <div id="g9C" class="g9Crotate rotate"></div>
+      <div id="f10A" class="f10Arotate rotate"></div>
+      <div id="f10B" class="f10Brotate rotate"></div>
+      <div id="f10C" class="f10Crotate rotate"></div>
+      <div id="f11A" class="f11Arotate rotate"></div>
+      <div id="f11B" class="f11Brotate rotate"></div>
+      <div id="f11C" class="f11Crotate rotate"></div>
+      <div id="g12A" class="g12Arotate rotate"></div>
+      <div id="g12B" class="g12Brotate rotate"></div>
+      <div id="g12C" class="g12Crotate rotate"></div>
+      <div id="g14A" class="g14Arotate rotate"></div>
+      <div id="g14B" class="g14Brotate rotate"></div>
+      <div id="g14C" class="g14Crotate rotate"></div>
+      <div id="h14A" class="h14Arotate rotate"></div>
+      <div id="h14B" class="h14Brotate rotate"></div>
+      <div id="h14C" class="h14Crotate rotate"></div>
+      <div id="i13A" class="i13Arotate rotate"></div>
+      <div id="i13B" class="i13Brotate rotate"></div>
+      <div id="i13C" class="i13Crotate rotate"></div>
+      <div id="j12A" class="j12Arotate rotate"></div>
+      <div id="j12B" class="j12Brotate rotate"></div>
+      <div id="j12C" class="j12Crotate rotate"></div>
+      <div id="j10A" class="j10Arotate rotate"></div>
+      <div id="j10B" class="j10Brotate rotate"></div>
+      <div id="j10C" class="j10Crotate rotate"></div>
+      <div id="j9A" class="j9Arotate rotate"></div>
+      <div id="j9B" class="j9Brotate rotate"></div>
+      <div id="j9C" class="j9Crotate rotate"></div>
+      <div id="j8A" class="j8Arotate rotate"></div>
+      <div id="j8B" class="j8Brotate rotate"></div>
+      <div id="j8C" class="j8Crotate rotate"></div>
+      <div id="j6A" class="j6Arotate rotate"></div>
+      <div id="j6B" class="j6Brotate rotate"></div>
+      <div id="j6C" class="j6Crotate rotate"></div>
+      <div id="j5A" class="j5Arotate rotate"></div>
+      <div id="j5B" class="j5Brotate rotate"></div>
+      <div id="j5C" class="j5Crotate rotate"></div>
+      <div id="k3A" class="k3Arotate rotate"></div>
+      <div id="k3B" class="k3Brotate rotate"></div>
+      <div id="k3C" class="k3Crotate rotate"></div>
+      <div id="l2A" class="l2Arotate rotate"></div>
+      <div id="l2B" class="l2Brotate rotate"></div>
+      <div id="l2C" class="l2Crotate rotate"></div>
+      <div id="m2A" class="m2Arotate rotate"></div>
+      <div id="m2B" class="m2Brotate rotate"></div>
+      <div id="m2C" class="m2Crotate rotate"></div>
+      <div id="n2A" class="n2Arotate rotate"></div>
+      <div id="n2B" class="n2Brotate rotate"></div>
+      <div id="n2C" class="n2Crotate rotate"></div>
+      <div id="o2A" class="o2Arotate rotate"></div>
+      <div id="o2B" class="o2Brotate rotate"></div>
+      <div id="o2C" class="o2Crotate rotate"></div>
+      <div id="p2A" class="p2Arotate rotate"></div>
+      <div id="p2B" class="p2Brotate rotate"></div>
+      <div id="p2C" class="p2Crotate rotate"></div>
+      <div id="q2A" class="q2Arotate rotate"></div>
+      <div id="q2B" class="q2Brotate rotate"></div>
+      <div id="q2C" class="q2Crotate rotate"></div>
+      <div id="q3A" class="q3Arotate rotate"></div>
+      <div id="q3B" class="q3Brotate rotate"></div>
+      <div id="q3C" class="q3Crotate rotate"></div>
+      <div id="r3A" class="r3Arotate rotate"></div>
+      <div id="r3B" class="r3Brotate rotate"></div>
+      <div id="r3C" class="r3Crotate rotate"></div>
+      <div id="s4A" class="s4Arotate rotate"></div>
+      <div id="s4B" class="s4Brotate rotate"></div>
+      <div id="s4C" class="s4Crotate rotate"></div>
+      <div id="s5A" class="s5Arotate rotate"></div>
+      <div id="s5B" class="s5Brotate rotate"></div>
+      <div id="s5C" class="s5Crotate rotate"></div>
+      <div id="r6A" class="r6Arotate rotate"></div>
+      <div id="r6B" class="r6Brotate rotate"></div>
+      <div id="r6C" class="r6Crotate rotate"></div>
+      <div id="q7A" class="q7Arotate rotate"></div>
+      <div id="q7B" class="q7Brotate rotate"></div>
+      <div id="q7C" class="q7Crotate rotate"></div>
+      <div id="q8A" class="q8Arotate rotate"></div>
+      <div id="q8B" class="q8Brotate rotate"></div>
+      <div id="q8C" class="q8Crotate rotate"></div>
+      <div id="p8A" class="p8Arotate rotate"></div>
+      <div id="p8B" class="p8Brotate rotate"></div>
+      <div id="p8C" class="p8Crotate rotate"></div>
+      <div id="o8A" class="o8Arotate rotate"></div>
+      <div id="o8B" class="o8Brotate rotate"></div>
+      <div id="o8C" class="o8Crotate rotate"></div>
+      <div id="n8A" class="n8Arotate rotate"></div>
+      <div id="n8B" class="n8Brotate rotate"></div>
+      <div id="n8C" class="n8Crotate rotate"></div>
+      <div id="m8A" class="m8Arotate rotate"></div>
+      <div id="m8B" class="m8Brotate rotate"></div>
+      <div id="m8C" class="m8Crotate rotate"></div>
+      <div id="l9A" class="l9Arotate rotate"></div>
+      <div id="l9B" class="l9Brotate rotate"></div>
+      <div id="l9C" class="l9Crotate rotate"></div>
+      <div id="l10A" class="l10Arotate rotate"></div>
+      <div id="l10B" class="l10Brotate rotate"></div>
+      <div id="l10C" class="l10Crotate rotate"></div>
+      <div id="l11A" class="l11Arotate rotate"></div>
+      <div id="l11B" class="l11Brotate rotate"></div>
+      <div id="l11C" class="l11Crotate rotate"></div>
+      <div id="l12A" class="l12Arotate rotate"></div>
+      <div id="l12B" class="l12Brotate rotate"></div>
+      <div id="l12C" class="l12Crotate rotate"></div>
+      <div id="m12A" class="m12Arotate rotate"></div>
+      <div id="m12B" class="m12Brotate rotate"></div>
+      <div id="m12C" class="m12Crotate rotate"></div>
+      <div id="n12A" class="n12Arotate rotate"></div>
+      <div id="n12B" class="n12Brotate rotate"></div>
+      <div id="n12C" class="n12Crotate rotate"></div>
+      <div id="o11A" class="o11Arotate rotate"></div>
+      <div id="o11B" class="o11Brotate rotate"></div>
+      <div id="o11C" class="o11Crotate rotate"></div>
+      <div id="p11A" class="p11Arotate rotate"></div>
+      <div id="p11B" class="p11Brotate rotate"></div>
+      <div id="p11C" class="p11Crotate rotate"></div>
+      <div id="q11A" class="q11Arotate rotate"></div>
+      <div id="q11B" class="q11Brotate rotate"></div>
+      <div id="q11C" class="q11Crotate rotate"></div>
+      <div id="s12A" class="s12Arotate rotate"></div>
+      <div id="s12B" class="s12Brotate rotate"></div>
+      <div id="s12C" class="s12Crotate rotate"></div>
+      <div id="s13A" class="s13Arotate rotate"></div>
+      <div id="s13B" class="s13Brotate rotate"></div>
+      <div id="s13C" class="s13Crotate rotate"></div>
+      <div id="s14A" class="s14Arotate rotate"></div>
+      <div id="s14B" class="s14Brotate rotate"></div>
+      <div id="s14C" class="s14Crotate rotate"></div>
+      <div id="r18A" class="r18Arotate rotate"></div>
+      <div id="r18B" class="r18Brotate rotate"></div>
+      <div id="r18C" class="r18Crotate rotate"></div>
+      <div id="q18A" class="q18Arotate rotate"></div>
+      <div id="q18B" class="q18Brotate rotate"></div>
+      <div id="q18C" class="q18Crotate rotate"></div>
+      <div id="p18A" class="p18Arotate rotate"></div>
+      <div id="p18B" class="p18Brotate rotate"></div>
+      <div id="p18C" class="p18Crotate rotate"></div>
+      <div id="o18A" class="o18Arotate rotate"></div>
+      <div id="o18B" class="o18Brotate rotate"></div>
+      <div id="o18C" class="o18Crotate rotate"></div>
+      <div id="m18A" class="m18Arotate rotate"></div>
+      <div id="m18B" class="m18Brotate rotate"></div>
+      <div id="m18C" class="m18Crotate rotate"></div>
+      <div id="l18A" class="l18Arotate rotate"></div>
+      <div id="l18B" class="l18Brotate rotate"></div>
+      <div id="l18C" class="l18Crotate rotate"></div>
+      <div id="k18A" class="k18Arotate rotate"></div>
+      <div id="k18B" class="k18Brotate rotate"></div>
+      <div id="k18C" class="k18Crotate rotate"></div>
+      <div id="j18A" class="j18Arotate rotate"></div>
+      <div id="j18B" class="j18Brotate rotate"></div>
+      <div id="j18C" class="j18Crotate rotate"></div>
+      <div id="i19A" class="i19Arotate rotate"></div>
+      <div id="i19B" class="i19Brotate rotate"></div>
+      <div id="i19C" class="i19Crotate rotate"></div>
+      <div id="h19A" class="h19Arotate rotate"></div>
+      <div id="h19B" class="h19Brotate rotate"></div>
+      <div id="h19C" class="h19Crotate rotate"></div>
+      <div id="g19A" class="g19Arotate rotate"></div>
+      <div id="g19B" class="g19Brotate rotate"></div>
+      <div id="g19C" class="g19Crotate rotate"></div>
+      <div id="f19A" class="f19Arotate rotate"></div>
+      <div id="f19B" class="f19Brotate rotate"></div>
+      <div id="f19C" class="f19Crotate rotate"></div>
+      <div id="e19A" class="e19Arotate rotate"></div>
+      <div id="e19B" class="e19Brotate rotate"></div>
+      <div id="e19C" class="e19Crotate rotate"></div>
+      <div id="d19A" class="d19Arotate rotate"></div>
+      <div id="d19B" class="d19Brotate rotate"></div>
+      <div id="d19C" class="d19Crotate rotate"></div>
+      <div id="c18A" class="c18Arotate rotate"></div>
+      <div id="c18B" class="c18Brotate rotate"></div>
+      <div id="c18C" class="c18Crotate rotate"></div>
+      <div id="c17A" class="c17Arotate rotate"></div>
+      <div id="c17B" class="c17Brotate rotate"></div>
+      <div id="c17C" class="c17Crotate rotate"></div>
+      <div id="c16A" class="c16Arotate rotate"></div>
+      <div id="c16B" class="c16Brotate rotate"></div>
+      <div id="c16C" class="c16Crotate rotate"></div>
+      <div id="c13A" class="c13Arotate rotate"></div>
+      <div id="c13B" class="c13Brotate rotate"></div>
+      <div id="c13C" class="c13Crotate rotate"></div>
+      <div id="d12A" class="d12Arotate rotate"></div>
+      <div id="d12B" class="d12Brotate rotate"></div>
+      <div id="d12C" class="d12Crotate rotate"></div>
+      <div id="d11A" class="d11Arotate rotate"></div>
+      <div id="d11B" class="d11Brotate rotate"></div>
+      <div id="d11C" class="d11Crotate rotate"></div>
+      <div id="d10A" class="d10Arotate rotate"></div>
+      <div id="d10B" class="d10Brotate rotate"></div>
+      <div id="d10C" class="d10Crotate rotate"></div>
+      <div id="c9A" class="c9Arotate rotate"></div>
+      <div id="c9B" class="c9Brotate rotate"></div>
+      <div id="c9C" class="c9Crotate rotate"></div>
+      <div id="c7A" class="c7Arotate rotate"></div>
+      <div id="c7B" class="c7Brotate rotate"></div>
+      <div id="c7C" class="c7Crotate rotate"></div>
+      <div id="c6A" class="c6Arotate rotate"></div>
+      <div id="c6B" class="c6Brotate rotate"></div>
+      <div id="c6C" class="c6Crotate rotate"></div>
+      <div id="c5A" class="c5Arotate rotate"></div>
+      <div id="c5B" class="c5Brotate rotate"></div>
+      <div id="c5C" class="c5Crotate rotate"></div>
+      <div id="c3A" class="c3Arotate rotate"></div>
+      <div id="c3B" class="c3Brotate rotate"></div>
+      <div id="c3C" class="c3Crotate rotate"></div>
+      <div id="d3A" class="d3Arotate rotate"></div>
+      <div id="d3B" class="d3Brotate rotate"></div>
+      <div id="d3C" class="d3Crotate rotate"></div>
+      <div id="e2A" class="e2Arotate rotate"></div>
+      <div id="e2B" class="e2Brotate rotate"></div>
+      <div id="e2C" class="e2Crotate rotate"></div>
+      <div id="f2A" class="f2Arotate rotate"></div>
+      <div id="f2B" class="f2Brotate rotate"></div>
+      <div id="f2C" class="f2Crotate rotate"></div>
+      <div id="g3A" class="g3Arotate rotate"></div>
+      <div id="g3B" class="g3Brotate rotate"></div>
+      <div id="g3C" class="g3Crotate rotate"></div>
+      <div id="g4A" class="g4Arotate rotate"></div>
+      <div id="g4B" class="g4Brotate rotate"></div>
+      <div id="g4C" class="g4Crotate rotate"></div>
+      <div id="h5A" class="h5Arotate rotate"></div>
+      <div id="h5B" class="h5Brotate rotate"></div>
+      <div id="h5C" class="h5Crotate rotate"></div>
+      <div id="h6A" class="h6Arotate rotate"></div>
+      <div id="h6B" class="h6Brotate rotate"></div>
+      <div id="h6C" class="h6Crotate rotate"></div>
+      <div id="g8A" class="g8Arotate rotate"></div>
+      <div id="g8B" class="g8Brotate rotate"></div>
+      <div id="g8C" class="g8Crotate rotate"></div>
+      <div id="g9A" class="g9Arotate rotate"></div>
+      <div id="g9B" class="g9Brotate rotate"></div>
+      <div id="g9C" class="g9Crotate rotate"></div>
+      <div id="f10A" class="f10Arotate rotate"></div>
+      <div id="f10B" class="f10Brotate rotate"></div>
+      <div id="f10C" class="f10Crotate rotate"></div>
+      <div id="f11A" class="f11Arotate rotate"></div>
+      <div id="f11B" class="f11Brotate rotate"></div>
+      <div id="f11C" class="f11Crotate rotate"></div>
+      <div id="g12A" class="g12Arotate rotate"></div>
+      <div id="g12B" class="g12Brotate rotate"></div>
+      <div id="g12C" class="g12Crotate rotate"></div>
+      <div id="g14A" class="g14Arotate rotate"></div>
+      <div id="g14B" class="g14Brotate rotate"></div>
+      <div id="g14C" class="g14Crotate rotate"></div>
+      <div id="h14A" class="h14Arotate rotate"></div>
+      <div id="h14B" class="h14Brotate rotate"></div>
+      <div id="h14C" class="h14Crotate rotate"></div>
+      <div id="i13A" class="i13Arotate rotate"></div>
+      <div id="i13B" class="i13Brotate rotate"></div>
+      <div id="i13C" class="i13Crotate rotate"></div>
+      <div id="j13A" class="j13Arotate rotate"></div>
+      <div id="j13B" class="j13Brotate rotate"></div>
+      <div id="j13C" class="j13Crotate rotate"></div>
+      <div id="j12A" class="j12Arotate rotate"></div>
+      <div id="j12B" class="j12Brotate rotate"></div>
+      <div id="j12C" class="j12Crotate rotate"></div>
+      <div id="j10A" class="j10Arotate rotate"></div>
+      <div id="j10B" class="j10Brotate rotate"></div>
+      <div id="j10C" class="j10Crotate rotate"></div>
+      <div id="j9A" class="j9Arotate rotate"></div>
+      <div id="j9B" class="j9Brotate rotate"></div>
+      <div id="j9C" class="j9Crotate rotate"></div>
+      <div id="j8A" class="j8Arotate rotate"></div>
+      <div id="j8B" class="j8Brotate rotate"></div>
+      <div id="j8C" class="j8Crotate rotate"></div>
+      <div id="j6A" class="j6Arotate rotate"></div>
+      <div id="j6B" class="j6Brotate rotate"></div>
+      <div id="j6C" class="j6Crotate rotate"></div>
+      <div id="j5A" class="j5Arotate rotate"></div>
+      <div id="j5B" class="j5Brotate rotate"></div>
+      <div id="j5C" class="j5Crotate rotate"></div>
+      <div id="j4A" class="j4Arotate rotate"></div>
+      <div id="j4B" class="j4Brotate rotate"></div>
+      <div id="j4C" class="j4Crotate rotate"></div>
+      <div id="k3A" class="k3Arotate rotate"></div>
+      <div id="k3B" class="k3Brotate rotate"></div>
+      <div id="k3C" class="k3Crotate rotate"></div>
+      <div id="l2A" class="l2Arotate rotate"></div>
+      <div id="l2B" class="l2Brotate rotate"></div>
+      <div id="l2C" class="l2Crotate rotate"></div>
+      <div id="m2A" class="m2Arotate rotate"></div>
+      <div id="m2B" class="m2Brotate rotate"></div>
+      <div id="m2C" class="m2Crotate rotate"></div>
+      <div id="n2A" class="n2Arotate rotate"></div>
+      <div id="n2B" class="n2Brotate rotate"></div>
+      <div id="n2C" class="n2Crotate rotate"></div>
+      <div id="o2A" class="o2Arotate rotate"></div>
+      <div id="o2B" class="o2Brotate rotate"></div>
+      <div id="o2C" class="o2Crotate rotate"></div>
+      <div id="p2A" class="p2Arotate rotate"></div>
+      <div id="p2B" class="p2Brotate rotate"></div>
+      <div id="p2C" class="p2Crotate rotate"></div>
+      <div id="q2A" class="q2Arotate rotate"></div>
+      <div id="q2B" class="q2Brotate rotate"></div>
+      <div id="q2C" class="q2Crotate rotate"></div>
+      <div id="q3A" class="q3Arotate rotate"></div>
+      <div id="q3B" class="q3Brotate rotate"></div>
+      <div id="q3C" class="q3Crotate rotate"></div>
+      <div id="r3A" class="r3Arotate rotate"></div>
+      <div id="r3B" class="r3Brotate rotate"></div>
+      <div id="r3C" class="r3Crotate rotate"></div>
+      <div id="s4A" class="s4Arotate rotate"></div>
+      <div id="s4B" class="s4Brotate rotate"></div>
+      <div id="s4C" class="s4Crotate rotate"></div>
+      <div id="s5A" class="s5Arotate rotate"></div>
+      <div id="s5B" class="s5Brotate rotate"></div>
+      <div id="s5C" class="s5Crotate rotate"></div>
+      <div id="r6A" class="r6Arotate rotate"></div>
+      <div id="r6B" class="r6Brotate rotate"></div>
+      <div id="r6C" class="r6Crotate rotate"></div>
+      <div id="q7A" class="q7Arotate rotate"></div>
+      <div id="q7B" class="q7Brotate rotate"></div>
+      <div id="q7C" class="q7Crotate rotate"></div>
+      <div id="q8A" class="q8Arotate rotate"></div>
+      <div id="q8B" class="q8Brotate rotate"></div>
+      <div id="q8C" class="q8Crotate rotate"></div>
+      <div id="p8A" class="p8Arotate rotate"></div>
+      <div id="p8B" class="p8Brotate rotate"></div>
+      <div id="p8C" class="p8Crotate rotate"></div>
+      <div id="o8A" class="o8Arotate rotate"></div>
+      <div id="o8B" class="o8Brotate rotate"></div>
+      <div id="o8C" class="o8Crotate rotate"></div>
+      <div id="n8A" class="n8Arotate rotate"></div>
+      <div id="n8B" class="n8Brotate rotate"></div>
+      <div id="n8C" class="n8Crotate rotate"></div>
+      <div id="m8A" class="m8Arotate rotate"></div>
+      <div id="m8B" class="m8Brotate rotate"></div>
+      <div id="m8C" class="m8Crotate rotate"></div>
+      <div id="l9A" class="l9Arotate rotate"></div>
+      <div id="l9B" class="l9Brotate rotate"></div>
+      <div id="l9C" class="l9Crotate rotate"></div>
+      <div id="l10A" class="l10Arotate rotate"></div>
+      <div id="l10B" class="l10Brotate rotate"></div>
+      <div id="l10C" class="l10Crotate rotate"></div>
+      <div id="l11A" class="l11Arotate rotate"></div>
+      <div id="l11B" class="l11Brotate rotate"></div>
+      <div id="l11C" class="l11Crotate rotate"></div>
+      <div id="l12A" class="l12Arotate rotate"></div>
+      <div id="l12B" class="l12Brotate rotate"></div>
+      <div id="l12C" class="l12Crotate rotate"></div>
+      <div id="m12A" class="m12Arotate rotate"></div>
+      <div id="m12B" class="m12Brotate rotate"></div>
+      <div id="m12C" class="m12Crotate rotate"></div>
+      <div id="n12A" class="n12Arotate rotate"></div>
+      <div id="n12B" class="n12Brotate rotate"></div>
+      <div id="n12C" class="n12Crotate rotate"></div>
+      <div id="o11A" class="o11Arotate rotate"></div>
+      <div id="o11B" class="o11Brotate rotate"></div>
+      <div id="o11C" class="o11Crotate rotate"></div>
+      <div id="p11A" class="p11Arotate rotate"></div>
+      <div id="p11B" class="p11Brotate rotate"></div>
+      <div id="p11C" class="p11Crotate rotate"></div>
+      <div id="q11A" class="q11Arotate rotate"></div>
+      <div id="q11B" class="q11Brotate rotate"></div>
+      <div id="q11C" class="q11Crotate rotate"></div>
+      <div id="r11A" class="r11Arotate rotate"></div>
+      <div id="r11B" class="r11Brotate rotate"></div>
+      <div id="r11C" class="r11Crotate rotate"></div>
+      <div id="s12A" class="s12Arotate rotate"></div>
+      <div id="s12B" class="s12Brotate rotate"></div>
+      <div id="s12C" class="s12Crotate rotate"></div>
+      <div id="s13A" class="s13Arotate rotate"></div>
+      <div id="s13B" class="s13Brotate rotate"></div>
+      <div id="s13C" class="s13Crotate rotate"></div>
+      <div id="s14A" class="s14Arotate rotate"></div>
+      <div id="s14B" class="s14Brotate rotate"></div>
+      <div id="s14C" class="s14Crotate rotate"></div>
+      <div id="s15A" class="s15Arotate rotate"></div>
+      <div id="s15B" class="s15Brotate rotate"></div>
+      <div id="s15C" class="s15Crotate rotate"></div>
+      
+
+      <div class="r18box square">         
+        <img id="r18" src="img/Picture10.png" style="width: 4.5vw;">
+      </div>
+      <div class="q18box square">         
+        <img id="q18" src="img/Picture11.png" style="width: 3vw;">
+      </div>
+      <div class="p18box square">
+        <img id="p18" src="img/Picture13.png" style="width: 4.5vw;">
+      </div>
+      <div class="o18box square">
+        <img id="o18" src="img/Picture14.png" style="width: 3.3vw;">
+      </div>
+      <div class="m18box square">
+        <img id="m18" src="img/Picture15.png" style="width: 3vw;">
+      </div>
+      <div class="l18box square">
+        <img id="l18" src="img/Picture5.png" style="width: 4vw;">
+      </div>
+      <div class="k18box square">
+        <img id="k18" src="img/Picture16.png" style="width: 4vw;">
+      </div>
+      <div class="j18box square">
+        <img id="j18" src="img/Picture17.png" style="width: 3vw;">
+      </div>
+      <div class="i19box square">
+        <img id="i19" src="img/Picture18.png" style="width: 3vw;">
+      </div>
+      <div class="h19box square">
+        <img id="h19" src="img/Picture10.png" style="width: 4.7vw;">
+      </div>
+      <div class="g19box square">
+        <img id="g19" src="img/Picture11.png" style="width: 3vw;">
+      </div>
+      <div class="f19box square">
+        <img id="f19" src="img/Picture19.png" style="width: 4.7vw;">
+      </div>
+      <div class="e19box square">
+        <img id="e19" src="img/Picture12.png" style="width: 4.5vw;">
+      </div>
+      <div class="d19box square">
+        <img id="d19" src="img/Picture20.png" style="width: 4vw">
+      </div>
+      <div class="c18box square">
+        <img id="c18" src="img/Picture15.png" style="width: 3vw;">
+      </div>
+      <div class="c17box square">
+        <img id="c17" src="img/Picture5.png" style="width: 4vw;">
+      </div>
+      <div class="c16box square">
+        <img id="c16" src="img/Picture16.png" style="width: 4.5vw;">
+      </div>
+      <div class="c13box square">
+        <img id="c13" src="img/Picture21.png" style="width: 4.5vw;">
+      </div>
+      <div class="d12box square">
+        <img id="d12" src="img/Picture22.png" style="width: 2.5vw;">
+      </div>
+      <div class="d11box square">
+        <img id="d11" src="img/Picture24.png" style="width: 4.5vw;">
+      </div>
+      <div class="d10box square">
+        <img id="d10" src="img/Picture25.png" style="width: 4vw;">
+      </div>
+      <div class="c9box square">
+        <img id="c9" src="img/Picture12.png" style="width: 4.5vw;">
+      </div>
+      <div class="c7box square">
+        <img id="c7" src="img/Picture20.png" style="width: 4vw;">
+      </div>
+      <div class="c6box square">
+        <img id="c6" src="img/Picture26.png" style="width: 5.7vw;">
+      </div>
+      <div class="c5box square">
+        <img id="c5" src="img/Picture27.png" style="width: 2.5vw;">
+      </div>
+      <div class="c3box square">
+        <img id="c3" src="img/Picture28.png" style="width: 4.5vw;">
+      </div>
+      <div class="d3box square">
+        <img id="d3" src="img/Picture31.png" style="width: 4.5vw;">
+      </div>
+      <div class="e2box square">
+        <img id="e2" src="img/Picture21.png" style="width: 5vw;">
+      </div> 
+      <div class="f2box square">
+        <img id="f2" src="img/Picture22.png" style="width: 2.7vw;">
+      </div>
+      <div class="g3box square">
+        <img id="g3" src="img/Picture29.png" style="width: 4.5vw;">
+      </div>
+      <div class="g4box square">
+        <img id="g4" src="img/Picture25.png" style="width: 4vw;">
+      </div>
+      <div class="h5box square">
+        <img id="h5" src="img/Picture12.png" style="width: 4vw;">
+      </div>
+      <div class="h6box square">
+        <img id="h6" src="img/Picture20.png" style="width: 4vw;">
+      </div>
+      <div class="g8box square">
+        <img id="g8" src="img/Picture15.png" style="width: 2.5vw;">
+      </div>
+      <div class="g9box square">
+        <img id="g9" src="img/Picture5.png" style="width: 4vw;">
+      </div>
+      <div class="f10box square">
+        <img id="f10" src="img/Picture30.png" style="width: 5vw;">
+      </div>
+      <div class="f11box square">
+        <img id="f11" src="img/Picture31.png" style="width: 4.5vw;">
+      </div>
+      <div class="g12box square">
+        <img id="g12" src="img/Picture21.png" style="width: 5.5vw;">
+      </div>
+      <div class="g14box square">
+        <img id="g14" src="img/Picture6.png" style="width: 3vw;">
+      </div>
+      <div class="h14box square">
+        <img id="h14" src="img/Picture24.png" style="width: 4.5vw;">
+      </div>
+      <div class="i13box square">
+        <img id="i13" src="img/Picture25.png" style="width: 4vw;">
+      </div>
+      <div class="j12box square">
+        <img id="j12" src="img/Picture12.png" style="width: 4.2vw;">
+      </div>
+      <div class="j10box square">
+        <img id="j10" src="img/Picture20.png" style="width: 3.8vw;">
+      </div>
+      <div class="j9box square">
+        <img id="j9" src="img/Picture15.png" style="width: 2.8vw;">
+      </div>
+      <div class="j8box square">
+        <img id="j8" src="img/Picture5.png" style="width: 3.8vw;">
+      </div>
+      <div class="j6box square">
+        <img id="j6" src="img/Picture16.png" style="width: 4.5vw;">
+      </div>
+      <div class="j5box square">
+        <img id="j5" src="img/Picture17.png" style="width: 3.5vw;">
+      </div>
+      <div class="k3box square">
+        <img id="k3" src="img/Picture22.png" style="width: 2.5vw;">
+      </div>
+      <div class="l2box square">
+        <img id="l2" src="img/Picture24.png" style="width: 4.5vw;">
+      </div>
+      <div class="m2box square">
+        <img id="m2" src="img/Picture33.png" style="width: 3.4vw;">
+      </div>
+      <div class="n2box square">
+        <img id="n2" src="img/Picture11.png" style="width: 2.5vw;">
+      </div>
+      <div class="o2box square">
+        <img id="o2" src="img/Picture13.png" style="width: 4vw;">
+      </div>
+      <div class="p2box square">
+        <img id="p2" src="img/Picture14.png" style="width: 3vw;">
+      </div>
+      <div class="q2box square">
+        <img id="q2" src="img/Picture27.png" style="width: 2.8vw;">
+      </div>
+      <div class="q3box square">
+        <img id="q3" src="img/Picture28.png" style="width: 4vw;">
+      </div>
+      <div class="r3box square">
+        <img id="r3" src="img/Picture31.png" style="width: 4vw;">
+      </div>
+      <div class="s4box square">
+        <img id="s4" src="img/Picture21.png" style="width: 4.5vw;">
+      </div>
+      <div class="s5box square">
+        <img id="s5" src="img/Picture22.png" style="width: 2.5vw;">
+      </div>
+      <div class="r6box square">
+        <img id="r6" src="img/Picture35.png" style="width: 4vw;">
+      </div>
+      <div class="q7box square">
+        <img id="q7" src="img/Picture36.png" style="width: 4.5vw;">
+      </div>
+      <div class="q8box square">
+        <img id="q8" src="img/Picture11.png" style="width: 2.8vw;">
+      </div>
+      <div class="p8box square">
+        <img id="p8" src="img/Picture13.png" style="width: 4vw;">
+      </div>
+      <div class="o8box square">
+        <img id="o8" src="img/Picture14.png" style="width: 3.5vw;">
+      </div>
+      <div class="n8box square">
+        <img id="n8" src="img/Picture27.png" style="width: 2.5vw;">
+      </div>
+      <div class="m8box square">
+        <img id="m8" src="img/Picture28.png" style="width: 5vw">
+      </div>
+      <div class="l9box square">
+        <img id="l9" src="img/Picture31.png" style="width: 4vw;">
+      </div>
+      <div class="l10box square">
+        <img id="l10" src="img/Picture21.png" style="width: 5vw;">
+      </div>
+      <div class="l11box square">
+        <img id="l11" src="img/Picture22.png" style="width: 2.5vw;">
+      </div>
+      <div class="l12box square">
+        <img id="l12" src="img/Picture24.png" style="width: 4.5vw;">
+      </div>
+      <div class="m12box square">
+        <img id="m12" src="img/Picture25.png" style="width: 4vw;">
+      </div>
+      <div class="n12box square">
+        <img id="n12" src="img/Picture37.png" style="width: 4.3vw;">
+      </div>
+      <div class="o11box square">
+        <img id="o11" src="img/Picture20.png" style="width: 4vw;">
+      </div>
+      <div class="p11box square">
+        <img id="p11" src="img/Picture15.png" style="width: 2.5vw;">
+      </div>
+      <div class="q11box square">
+        <img id="q11" src="img/Picture5.png" style="width: 4.5vw;">
+      </div>
+      <div class="s12box square">
+        <img id="s12" src="img/Picture31.png" style="width: 4.5vw;">
+      </div>
+      <div class="s13box square">
+        <img id="s13" src="img/Picture21.png" style="width: 5.5vw;">
+      </div>
+      <div class="s14box square">
+        <img id="s14" src="img/Picture22.png" style="width: 2.5vw;">
+      </div>
+
+
+      
+     
+
+
+      
+<!--This is the sidebar. It has to be after the main so the cards are ontop of the track without
+messing with z index-->
+
+      <div class="side">
+      </div> 
+      <div class="instructionsbackground">
+      </div>
+      
+
+      
+      <div class="stack" id="stack">
+        <div class="inner-stacks">     
+         
+          <div class="previous-back-stand-in">
+          <div class="back-stand-in">
+          
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/Cardstacks/pickupcardtop.png" alt="Cardstack1" style="width:100%;height:95%;">
+            </div>
+            <div class="flip-card-back">
+            </div>
+          </div>  
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="startyourenginesbackground">
+      </div>
+      
+      <div id="red3"></div>
+   
+    
+    </div>
+    </div>
+  </body>
+</html>
+
