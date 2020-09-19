@@ -90,7 +90,6 @@ $(document).ready(function() {
   let car1selected = 0
   let car2selected = 0
   $("button#select1").click(function() {
-    debugger
     car1selected=game.cars[count1].carName;
     if (car1selected===car2selected) {
       alert("I'm sorry, you can't choose the same car as player 2");
@@ -160,36 +159,16 @@ function Racer(name,space,oldLoc,aOrC) {
   this.aOrC = aOrC;
 }
 
-
-let racer1 = new Racer;
+let racer1 = new Racer;  //future refactor project to have more than 2 players?
 let racer2 = new Racer;
 
 racer1.name = localStorage.getItem("transfer1"); //brings car choices across from selector page
 racer2.name = localStorage.getItem("transfer2");
 
-
-
-/*Game.prototype.findRacerIndex = function(car) {
-  debugger
-  alert (racer1.name);
-  let racer1i
-  let racer2i
-  for (let i = 0; i<carList.length; i++) {
-    if (game.cars[i].racer===1) {
-      racer1i = i
-    }
-    if (game.cars[i].racer===2) {
-      racer2i = i
-    }
-  }
-  return racer1i,racer2i
-}
-*/
 $("#red3").click(function() {  /* This places the car on the start line. */
-  debugger
   alert("car1 is "+racer1.name+" car2 is "+racer2.name);
-  $("div.j4Arotate").addClass(racer1.name+"top");
-  document.getElementById("j4A").style.zIndex = "15";
+  $("div.s17Arotate").addClass(racer1.name+"top");
+  document.getElementById("s17A").style.zIndex = "15";
   $("div.s17Crotate").addClass(racer2.name+"top");
   document.getElementById("s17C").style.zIndex = "5";
 }); 
@@ -256,8 +235,7 @@ $("#stack").click(function() {
   $("div.flip-card-back").addClass(card);
   uncard=card;
 
-  
-  alert("Are you ready?");/*for some reason it won't do a second flip
+    alert("Are you ready?");/*for some reason it won't do a second flip
                           without this break here. Event bubbling? */
   $("div.flip-card-inner").addClass("flip-card");  //card is flipped
  
@@ -268,26 +246,15 @@ $("#stack").click(function() {
 });
 
   
+/*  GAME FUNCTIONALITY  */
 
-/*  GAME FUNCTIONALITY  
-
-Inputs - 
-    cars selected = car1selected  car2selected
-    card turned = uncard
-    track square selected - location and space */
-
-  //  car1space = 0
-  //  car2space = 0
-
-racer1.space = 32;
-racer1.oldLoc = "j4A";    //Tells function how to remove cars from start line
+racer1.space = 0;
+racer1.oldLoc = "s17A";    //Tells function how to remove cars from start line
 racer1.aOrC = "A";
 racer2.space = 0;
 racer2.oldLoc = "s17C";
 racer2.aOrC = "C";
       
-  
- 
 Racer.prototype.shoveCar = function() {                 //Shoves the other car to the side
   $("."+this.oldloc+"rotate").removeClass(this.name+"top"); //This removes picture of other car     
   document.getElementById(this.oldLoc).style.zIndex = "-1";  // puts div to the back
@@ -297,30 +264,27 @@ Racer.prototype.shoveCar = function() {                 //Shoves the other car t
 };
 
 Racer.prototype.placeCar = function(locate) {                         //This puts car in the right place
-  debugger
   $("."+this.oldLoc+"rotate").removeClass(this.name+"top");         //Removes from old location
   document.getElementById(this.oldLoc).style.zIndex = "-1";         //puts div to the back
   document.getElementById(locate).style.zIndex = "5";               //brings div to the front
   $("#"+locate).addClass(this.name+"top");                          //adds picture of car 
   this.oldLoc = locate //This sets up the information for the next turn
-  this.checkCuts(space);
+  space = this.checkCuts(space);
   this.space = space;
-  alert ("space = "+this.space);
 };
 
-Racer.prototype.checkCuts = function(space) {
-  debugger
-  let cutSpaces = [32,41,61,73,49,19,77,7];
+Racer.prototype.checkCuts = function(space) {         //Shortcuts need two spaces.  The first is checked that it is not >11 from previous                                          
+  let cutSpaces = [32,41,61,73,49,19,77,7];           //The second at the end of the cut is needed to check next move is not >11
   for (let i=0; i < 4; i++) {
     if(cutSpaces[i]===space) {
-      this.space = cutSpaces[(i+4)];
-      alert ("space in checkCuts = "+this.space)
+      space = cutSpaces[(i+4)];
+      return space
     }
   }
+  return space  
 };
 
 Racer.prototype.raceCarCheck = function (position) {
-  debugger
   if (position.slice(-3)==="car"){
     return true;
   }
@@ -328,7 +292,6 @@ Racer.prototype.raceCarCheck = function (position) {
 };
 
 function checkspace(locate) {    //Big function that moves cars.  Probably should be broken out into sub functions
-  debugger
   if (position != uncard) {
     alert("no that's "+position+" not "+uncard);  // Something about stop or go to end of function
   }
@@ -343,62 +306,13 @@ function checkspace(locate) {    //Big function that moves cars.  Probably shoul
     }
     else {
       if (space===(turnOff.space-1)||space===turnOff.space||space===(turnOff.space+1)) {  
-      turnOff.shoveCar();  
-      locate = locate.substring(0,locate.length -1)+turnOn.aOrC;//This sets up car to go to its side
+        turnOff.shoveCar();  
+        locate = locate.substring(0,locate.length -1)+turnOn.aOrC;//This sets up car to go to its side
       }
       turnOn.placeCar(locate);
-      alert ("space = "+this.space);
     }
   }  
 };    
-
-  /*
-      var car1oldlocmadeA=car1oldlocation.substring(0,car1oldlocation.length -1)+"A"  //When two cars have been on the same square, car1oldlocation can
-      $("."+car1oldlocmadeA+"rotate").removeClass(x+"top");                         // sometimes be set to B, even though the code above would seem to 
-      //alert("car 1 A has been removed "+"."+car1oldlocmadeA+"rotate");            //set it to A. This is a hack that removes the image from
-                                                                                    // A every time, whether it is needed or not.  To fix in future. 
-   */                                                                                 // Equivalent hack is also done on turn 2
-  
-      
-      
-    /*  
-      //turn=0  Make this active to prevent a player making multiple moves per turn
-    //}
-    
-  }    
-  else if (turn===2) {
-    if ((space-car2space)>11) {
-      alert("Did you miss a "+uncard+" before that?");
-    }
-    //else {
-      if (space===(car1space-1)||space===car1space||space===(car1space+1)) {
-        document.getElementById(car1oldlocation).style.zIndex = "-1";  
-        $("#"+car1oldlocation).removeClass(x+"top"); //removes car1 from B
-        car1oldlocation = car1oldlocation.substring(0,car1oldlocation.length -1)+"A"; //Changes car1 location to A
-        document.getElementById(car1oldlocation).style.zIndex = "5";  //brings car1's div to the top
-        $("#"+car1oldlocation).addClass(x+"top"); //adds the picture of car1
-        locate = locate.substring(0,locate.length -1)+"C" //This sets up car 2 to go to C
-      }
-
-      var car2oldlocmadeC=car2oldlocation.substring(0,car2oldlocation.length -1)+"C"  //This is the car2 version of the hack described above
-      $("."+car2oldlocmadeC+"rotate").removeClass(y+"top");
-      //alert("car 2 C has been removed");  
-
-      $("#"+car2oldlocation).removeClass(y+"top");
-      document.getElementById(car2oldlocation).style.zIndex = "-1";  //This puts car 2 in the right place
-      document.getElementById(locate).style.zIndex = "5";  
-      $("#"+locate).addClass(y+"top");
-      
-      car2oldlocation = locate //This sets up the information for the next turn
-      car2space = space
-      //turn=0   Make this active to prevent a player making multiple moves per turn*/
-  
-    
-
-
-
-
-
 
     // Turn starts by clicking pile of cards.  Then click the appropriate icon. This kicks off the big move car function above
 

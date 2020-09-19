@@ -531,7 +531,6 @@ li.borderless {
 .r18Arotate {
   grid-area:518/868;
   transform: rotate(220deg);
-  z-index: 10;
   }
 .r18Brotate {
   grid-area:530/868;
@@ -855,7 +854,7 @@ li.borderless {
 }
 .c3Arotate {
   grid-area: 98/300;
-  transform: rotate(20deg);
+  transform: rotate(deg);
 }
 .c3Brotate {
   grid-area: 90/290;
