@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vehicle selector Refactor Project</title>
+    <title>Vehicle selector for Track Refactor Project</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.0.js"></script>
@@ -14,27 +14,23 @@
         <div class="navbar-header">
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="https://ajwickham.github.io/portfolio-explanation/index.html">Portfolio</a></li>
+          <li class="active"><a href="https://ajwickham.github.io/portfolio/index.html">Portfolio</a></li>
         </ul>
       </div>  
       </div>
     </nav> 
     
     <div class="container">
-      <h1>Refactoring Goals</h1>
-        <ul>
-          <li>DRY code</li>
-          <li>Demonstrate use of protypes and constructors</li>
-        </ul>
-      <h1>Indicators</h1>
-        <ul>
-          <li>Code reduced from 158 lines to 126 lines</li>
-          <li>2 Prototype methods were used to add and remove classes in various combinations across the 5 pictures for each player.</li>
-        </ul>
-
-
-
-
+      <h1>This Car Selector Page</h1>
+        <div class="row ">
+          <div class="col-sm-8">
+            <ul class="list-group">
+              <li class="list-group-item" style="border: none">This page is unchanged from the Car Selector Refactor project</li>
+              <li class="list-group-item" style="border: none">But it is needed to select the cars for the refactored track page</li>
+            </ul>
+          </div>  
+        </div>
+          
       <h1>Vehicle selector</h1>
      
       <div class="row ">
@@ -44,13 +40,13 @@
             <li class="list-group-item" style="border: none">Scroll down and click the view button to see the vehicle from all angles.</li>  
             <li class="list-group-item" style="border: none">Click the select button to choose the vehicle showing.</li>
             <li class="list-group-item" style="border: none">Click the "Oh no I didn't mean to choose that one" to choose a different one</li>
-            <!--li class="list-group-item" style="border: none">Click the Ready to Play button, when cars have been selected</li-->
+            <li class="list-group-item" style="border: none">Click the Ready to Play button, when cars have been selected</li>
           </ul>
         </div>
-    <!--    <div class="col-sm-4">
+        <div class="col-sm-4">
           <a href="Track.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" id="ready">Ready to Play</a>
         </div>
-        Not needed for this refactor project -->
+        
 
       <!--  Two bootstap columns to choose cars-->
       
@@ -60,9 +56,7 @@
           <h2>Player One</h2>
           
           <button class="btn btn-primary" id="next1">Next</button>
-          <div class="car1right carsize" style="margin-bottom: 5vh;"></div>
-           
-      <!-- to work out why DodgeViper isn't working-->          
+          <div class="car1right carsize" style="margin-bottom: 5vh;"></div> 
                 <button class="btn btn-warning" id="view1">View</button>
                 <button class="btn btn-warning" id="clearview1">Clear View</button>    
                 <button class="btn btn-success" id="select1">Select</button>
