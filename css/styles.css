@@ -146,7 +146,7 @@ li.borderless {
 }
 
 #red3 {
-  grid-area: 530/45/580/175;
+  grid-area: 580/45/630/175;
   background-image: url("../img/Howtoplaybutton.png");
   background-repeat: no-repeat;
   background-size: contain;
